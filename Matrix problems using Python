@@ -1,0 +1,136 @@
+(1)
+Write a Python program to read and print a (n * m) matrix using for-loop 
+
+r = int(input("Enter the number of rows:"))
+c = int(input("Enter the number of columns:"))
+matrix = []
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  matrix.append(a)
+print("\nThe matrix is:")
+for i in range(r):
+  for j in range(c):
+    print(matrix[i][j], end = " ")
+  print()
+
+
+(2)
+Write a Python program to find sum of two matrices( Matrices explicitly given in the program)
+r = int(input("Enter the number of rows:"))
+c = int(input("Enter the number of columns:"))
+A = []
+print("\nEnter elements of first matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  A.append(a) 
+B = []
+print("\nEnter elements of Second matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  B.append(a) 
+C=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] + B[i][j]
+print("\nTheir sum is:-")
+for i in range(r):
+  for j in range(c):
+    print(C[i][j], end = " ")
+  print()
+
+
+
+(3)
+Write a Python program to find difference of two matrices (Matrices explicitly given in the program)
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] - B[i][j]
+print("Their Difference is:-")
+for r in C:  
+   print(r)  
+
+
+
+(4)
+#Write a Python program to read two (n * m ) matrices and print the difference 
+r = int(input("Enter the number of rows:"))
+c = int(input("Enter the number of columns:"))
+A = []
+print("\nEnter elements of first matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  A.append(a) 
+B = []
+print("\nEnter elements of Second matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  B.append(a) 
+C=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] - B[i][j]
+print("\nTheir difference  is:-")
+for i in range(r):
+  for j in range(c):
+    print(C[i][j], end = " ")
+  print()  
+
+
+
+(5)
+Write a Python program to find a product of two matrices(Matrices explicitly given in the program) 
+A = [[1,2,3],[4 ,5,6],[7 ,8,9]]
+  
+B = [[10,11,12],[13,14,15],[16,17,18]]
+
+C = [[0,0,0],[0,0,0],  [0,0,0]] 
+ 
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] * B[i][j]
+print("Their product is:-")
+for r in C:  
+  print(r)  
+
+  
+   
+(6)
+Write a Python program to read two (n * m) matrices and print the product 
+r = int(input("Enter the number of rows:"))
+c = int(input("Enter the number of columns:"))
+A = []
+print("\nEnter elements of first matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  A.append(a) 
+B = []
+print("\nEnter elements of Second matrix:-")
+for i in range(r):
+  a =[]
+  for j in range(c):      
+    a.append(int(input()))
+  B.append(a) 
+C=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(A)):   
+  for j in range(len(A[0])):  
+    C[i][j] = A[i][j] * B[i][j]
+print("\nTheir product is:-")
+for i in range(r):
+  for j in range(c):
+    print(C[i][j], end = " ")
+  print()
+   
+  
+
